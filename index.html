@@ -3,129 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pratyush Ranjan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Name | Futuristic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations/animations.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <h1 class="logo">Pratyush Ranjan</h1>
+
+    <!-- Particle Background -->
+    <div class="particles"></div>
+
+    <!-- Navigation Bar -->
+    <header class="header animate-header">
+        <nav class="navbar">
+            <h1 class="logo">Your Name</h1>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>I'm a developer </p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
+    <section class="hero">
+        <h1 class="neon-title animate-zoom-in">Welcome to <span>Your Name's</span> World</h1>
+        <p class="neon-text animate-fade-in">Futuristic Developer & Designer</p>
+        <a href="#projects" class="btn-glow animate-bounce">Explore My Work</a>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p> I am a seasoned software and robotics engineer with over 8 years of experience, including a significant tenure at [Big MNC Company Name],
-                a leading global organization in technology and innovation.
-              My expertise lies in developing cutting-edge robotic systems and robust software solutions that drive efficiency and innovation across various industries. </p>
+        <h2>About Me</h2>
+        <p>I am a passionate developer focused on next-gen web development with interactive animations and 3D effects. I design with creativity and futuristic trends in mind.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-container">
+            <div class="skill neon-box">HTML</div>
+            <div class="skill neon-box">CSS</div>
+            <div class="skill neon-box">JavaScript</div>
+            <div class="skill neon-box">React</div>
+            <div class="skill neon-box">Node.js</div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="img1.jpg" alt="Project 1">
-                    <h3>Project One</h3>
-                    <p>A brief description of Project One.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
-                    <h3>Project Two</h3>
-                    <p>A brief description of Project Two.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>Project Three</h3>
-                    <p>Freelance Services
-
-As a freelancer, I leverage my extensive background to offer:
-
-- Custom Software Development:Tailored solutions to meet your specific business needs, ensuring reliability and scalability.
-  
-- Robotics Consulting:Expert advice on designing, implementing, and optimizing robotic systems for enhanced performance.
-  
-- System Integration: Seamless integration of software and hardware components to create cohesive and efficient workflows.
-  
-- Technical Support & Maintenance: Ongoing support to ensure your projects run smoothly and adapt to evolving requirements.</p>
-                 
-                  <p>Why Choose Me**
-
-- **Proven Expertise:** Backed by years of experience in a top-tier MNC, I bring a depth of knowledge and a track record of successful project deliveries.
-  
-- **Innovative Approach:** I thrive on solving complex problems with creative and effective solutions, ensuring your projects stand out.
-  
-- **Client-Centric:** Committed to understanding your unique needs and delivering personalized services that drive your success.
-  
-- **Continuous Learning:** Dedicated to staying updated with the latest advancements in software and robotics to provide cutting-edge solutions.</p>p
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
+        <h2>Projects</h2>
+        <div class="project card">
+            <img src="assets/images/project1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>This is an advanced futuristic project built using next-gen technologies.</p>
+            <a href="#" class="btn-glow">View Project</a>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <ul class="skill-list">
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript & ES6</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>Responsive Design</li>
-                <li>Version Control (Git)</li>
-            </ul>
+        <div class="project card">
+            <img src="assets/images/project2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>Another amazing web design project filled with interactivity.</p>
+            <a href="#" class="btn-glow">View Project</a>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mYOURCODE" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-glow">Send</button>
+        </form>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Pratyush Ranjan  . All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" target="_blank">LinkedIn</a> |
-                <a href="#" target="_blank">GitHub</a> |
-                <a href="#" target="_blank">Twitter</a>
-            </div>
-        </div>
+    <footer class="footer">
+        <p>© 2024 Your Name. All Rights Reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
